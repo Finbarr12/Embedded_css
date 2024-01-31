@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Rubik+Burned&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Rubik+Burned&display=swap");
+      * {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: black; */
+      }
+      .container {
+        width: 80%;
+        height: 70%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .signtext {
+        font-weight: bolder;
+        font-size: 43px;
+        margin-bottom: 45px;
+      }
+
+      .inputHolder {
+        width: 390px;
+        height: 40px;
+        /* background-color: red; */
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+        overflow: hidden;
+      }
+
+      .inpimg {
+        height: 25px;
+      }
+      .inpForm {
+        height: 100%;
+        flex: 1;
+        border: none;
+        outline: none;
+      }
+      .checkBoxHold {
+        display: flex;
+      }
+      .p {
+        margin-left: 10px;
+      }
+
+      .leftimg {
+        height: 480px;
+      }
+
+      a {
+        margin-top: 24px;
+        color: black;
+      }
+
+      button {
+        width: 150px;
+        height: 50px;
+        background-color: #6eabe4;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        margin-top: 55px;
+        font-weight: 800;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1 class="signtext">Sign Up</h1>
+        <div class="inputHolder">
+          <img src="./image/person.png" alt="" class="inpimg" />
+          <input type="text" class="inpForm" placeholder="Name" />
+        </div>
+        <div class="inputHolder">
+          <img src="./image/mail.png" alt="" class="inpimg" />
+          <input type="text" class="inpForm" placeholder="Email" />
+        </div>
+        <div class="inputHolder">
+          <img src="./image/passpadlock.svg" alt="" class="inpimg" />
+          <input type="text" class="inpForm" placeholder="Password" />
+        </div>
+        <div class="inputHolder">
+          <img src="./image/padrepeat.png" alt="" class="inpimg" />
+          <input type="text" class="inpForm" placeholder="Repeat Password" />
+        </div>
+        <div class="checkBoxHold">
+          <input type="checkbox" />
+          <p class="p">
+            I agree all statements in <a href="#">Terms and Services</a>
+          </p>
+        </div>
+        <button>Register</button>
+      </div>
+      <div class="right">
+        <img src="./image/formImage.svg" alt="" class="leftimg" />
+
+        <a href="#">I am already a Member</a>
+      </div>
+    </div>
+  </body>
+</html>
